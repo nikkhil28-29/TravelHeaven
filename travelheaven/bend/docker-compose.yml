@@ -17,9 +17,9 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data/
     environment:
-      - POSTGRES_USER=postgresuser
-      - POSTGRES_PASSWORD=postgrespassword
-      - POSTGRES_DB=djangobnb
+      - POSTGRES_USER=nikhil2808
+      - POSTGRES_PASSWORD=your_password
+      - POSTGRES_DB=travelheaven
 
 volumes:
   postgres_data:

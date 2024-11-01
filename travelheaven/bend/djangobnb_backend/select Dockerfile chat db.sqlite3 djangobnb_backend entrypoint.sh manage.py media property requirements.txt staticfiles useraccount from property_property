@@ -1,0 +1,24 @@
+                        List of relations
+ Schema |               Name                | Type  |   Owner    
+--------+-----------------------------------+-------+------------
+ public | account_emailaddress              | table | nikhil2808
+ public | account_emailconfirmation         | table | nikhil2808
+ public | auth_group                        | table | nikhil2808
+ public | auth_group_permissions            | table | nikhil2808
+ public | auth_permission                   | table | nikhil2808
+ public | authtoken_token                   | table | nikhil2808
+ public | chat_conversation                 | table | nikhil2808
+ public | chat_conversation_users           | table | nikhil2808
+ public | chat_conversationmessage          | table | nikhil2808
+ public | django_admin_log                  | table | nikhil2808
+ public | django_content_type               | table | nikhil2808
+ public | django_migrations                 | table | nikhil2808
+ public | django_session                    | table | nikhil2808
+ public | property_property                 | table | nikhil2808
+ public | property_property_favorited       | table | nikhil2808
+ public | property_reservation              | table | nikhil2808
+ public | useraccount_user                  | table | nikhil2808
+ public | useraccount_user_groups           | table | nikhil2808
+ public | useraccount_user_user_permissions | table | nikhil2808
+(19 rows)
+

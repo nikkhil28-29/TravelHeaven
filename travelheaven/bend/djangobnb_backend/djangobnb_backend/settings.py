@@ -161,19 +161,50 @@ WSGI_APPLICATION = 'djangobnb_backend.wsgi.application'
 ASGI_APPLICATION = 'djangobnb_backend.asgi.application'
 
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
+
+
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': os.environ.get("SQL_ENGINE"),
-        'NAME': os.environ.get("SQL_DATABASE"),
-        'USER': os.environ.get("SQL_USER"),
-        'PASSWORD': os.environ.get("SQL_PASSWORD"),
-        'HOST': os.environ.get("SQL_HOST"),
-        'PORT': os.environ.get("SQL_PORT"),
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': os.environ.get("SQL_ENGINE"),
+#         'NAME': os.environ.get("SQL_DATABASE"),
+#         'USER': os.environ.get("SQL_USER"),
+#         'PASSWORD': os.environ.get("SQL_PASSWORD"),
+#         'HOST': os.environ.get("SQL_HOST"),
+#         'PORT': os.environ.get("SQL_PORT"),
+#     }
+# }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'postgres',                             # Database name
+#         'USER': 'postgres.qtivbtkrbdsajqihpzpa',         # Username with unique identifier
+#         'PASSWORD': 'Nikhil#28082808',                # Replace with the actual password
+#         'HOST': 'aws-0-ap-south-1.pooler.supabase.com',  # Supabase host
+#         'PORT': '6543',                                  # Supabase port
+#     }
+# }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         # 'ENGINE': 'django.contrib.gis.db.backends.postgis',
+#         'PORT': '5432',
+#         'NAME': os.environ.get('DB_NAME'),
+#         'USER': os.environ.get('DB_USER'),
+#         'PASSWORD': os.environ.get('DB_PASSWORD'),
+#         'HOST': os.environ.get('DB_HOST'),
+#     }
+# }
+
 
 NAME = DATABASES['default']['NAME']
 print('NAME', NAME)
